@@ -3,6 +3,8 @@
 
 注：创建好的工程文件依赖于create-react-app和vue-cli的用法。对两者熟悉的可以无障碍使用。
 
+## 安装方法
+`npm install -g haise-cli`
 ## 使用方法
 `haise init`
 
