@@ -5,6 +5,7 @@
 
 ## 安装方法
 `npm install -g haise-cli`
+
 ## 使用方法
 `haise init`
 
