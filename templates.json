@@ -8,11 +8,11 @@
     "branch": "master"
   },
   "vue-koa2": {
-    "GitHub": "shifeng1993/react-koa2",
+    "GitHub": "shifeng1993/vue-koa2",
     "branch": "master"
   },
   "vue": {
-    "GitHub": "shifeng1993/react-start",
+    "GitHub": "shifeng1993/vue-start",
     "branch": "master"
   }
 }

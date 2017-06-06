@@ -1,4 +1,4 @@
-# haise-cli V1.0.0
+# haise-cli V1.0.2
 一个简易的cli脚手架，为了方便使用，故不重复造轮子，只有两个命令
 
 注：创建好的工程文件依赖于create-react-app和vue-cli的用法。对两者熟悉的可以无障碍使用。
