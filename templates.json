@@ -1,0 +1,18 @@
+{
+  "react-koa2": {
+    "GitHub": "shifeng1993/react-koa2",
+    "branch": "master"
+  },
+  "react": {
+    "GitHub": "shifeng1993/react-start",
+    "branch": "master"
+  },
+  "vue-koa2": {
+    "GitHub": "shifeng1993/react-koa2",
+    "branch": "master"
+  },
+  "vue": {
+    "GitHub": "shifeng1993/react-start",
+    "branch": "master"
+  }
+}

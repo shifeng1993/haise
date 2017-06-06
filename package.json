@@ -1,0 +1,35 @@
+{
+  "name": "haise-cli",
+  "version": "1.0.0",
+  "author": "shifeng",
+  "email": "shifeng199307@gmail.com",
+  "description": "this is a react-cli",
+  "main": "index.js",
+  "bin": {
+    "haise": "bin/haise"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shifeng1993/haise.git"
+  },
+  "keywords": [
+    "haise",
+    "cli",
+    "es6"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/shifeng1993/haise/issues"
+  },
+  "homepage": "https://github.com/shifeng1993/haise#readme",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "commander": "^2.9.0",
+    "download-git-repo": "^1.0.0",
+    "inquirer": "^3.0.6",
+    "ora": "^1.2.0"
+  }
+}
