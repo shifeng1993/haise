@@ -11,14 +11,14 @@ const question = [
   {
     type: 'input',
     name: 'name',
-    message: '模板名称',
+    message: '模板:',
     validate(val) {
       if (tplList[val]) {
         return true
       } else if (val === '') {
-        return '模板名称不能为空!'
+        return '模板不能为空!如需查看模板请在命令行输入 haise ls'
       } else if (!tplList[val]) {
-        return '此模板名称不存在！如需查看模板名称请输入 haise ls'
+        return '此模板不存在!如需查看模板请在命令行输入 haise ls'
       }
     }
   }, {
