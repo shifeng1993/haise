@@ -14,5 +14,9 @@
   "vue": {
     "GitHub": "shifeng1993/vue-start",
     "branch": "master"
+  },
+  "server": {
+    "GitHub": "shifeng1993/koa2server",
+    "branch": "master"
   }
 }
