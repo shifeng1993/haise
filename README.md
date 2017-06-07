@@ -8,13 +8,13 @@
 `npm install -g haise-cli`
 
 ## 使用方法
-`haise init`
-
-创建起始项目，有vue和react两种
-
 `haise ls`
 
 浏览模板列表
+
+`haise init`
+
+创建起始项目
 
 ## 版本特性
 ### 1.0.0
