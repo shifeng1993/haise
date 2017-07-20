@@ -1,0 +1,27 @@
+.screen-wrap {
+  display: inline-block;
+  width: 70%;
+  height: 100px;
+  margin: 0 5px;
+  padding: 5px 20px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  p,
+  div {
+    display: inline-block;
+    margin: 10px 30px;
+  }
+  p {
+    line-height: 70px;
+    margin: 10px;
+  }
+  .id {
+    font-size: 30px;
+  }
+  .name {
+    font-size: 30px;
+  }
+  .price {
+    font-size: 30px;
+  }
+}

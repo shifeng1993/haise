@@ -9,32 +9,24 @@ let tplList = require(`${__dirname}/../templates`)
 
 const question = [
   {
-    type: 'input',
+    type: 'list',
     name: 'name',
-    message: '模板:',
-    validate(val) {
-      if (tplList[val]) {
-        return true
-      } else if (val === '') {
-        return '模板不能为空!如需查看模板请在命令行输入 haise ls'
-      } else if (!tplList[val]) {
-        return '此模板不存在!如需查看模板请在命令行输入 haise ls'
-      }
-    }
+    message: '选择模板:',
+    choices: ['react-koa2', 'react', 'vue-koa2', 'vue', 'koa2-server', 'express-server']
   }, {
     type: 'input',
     name: 'project',
-    message: '工程名称:',
+    message: '输入项目名称:',
     validate(val) {
       if (val !== '') {
         return true
       }
-      return 'Project name is required!'
+      return '项目名称不能为空!'
     }
   }, {
     type: 'input',
     name: 'place',
-    message: '在哪个目录创建:',
+    message: '输入项目名称:',
     default: './'
   }
 ]
