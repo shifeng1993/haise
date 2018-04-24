@@ -1,10 +1,9 @@
 {
   "name": "haise-cli",
-  "version": "1.2.0",
+  "version": "1.0.0",
   "author": "shifeng",
   "email": "shifeng199307@gmail.com",
   "description": "this is a haise-cli",
-  "main": "index.js",
   "bin": {
     "haise": "bin/haise"
   },
@@ -14,8 +13,7 @@
   },
   "keywords": [
     "haise",
-    "cli",
-    "es6"
+    "cli"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

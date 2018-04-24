@@ -12,7 +12,7 @@ const question = [
     type: 'list',
     name: 'name',
     message: '选择模板:',
-    choices: ['react-koa2', 'react', 'vue-koa2', 'vue', 'koa2-server', 'express-server']
+    choices: ['react', 'react-native', 'vue', 'koa2-server']
   }, {
     type: 'input',
     name: 'project',
@@ -43,26 +43,33 @@ module.exports = prompt(question).then(({name, project, place}) => {
       process.exit()
     }
     spinner.stop()
-    if (`${name}` == 'react') {
-      console.log(chalk.green('\n   新的' + `${name}` + '项目已经成功初始化'));
-      console.log(chalk.green('\n   如需开始请输入以下命令：'));
-      console.log(chalk.blue('\n           cd ' + `${project}` + '\n           npm install\n           npm start'));
-      console.log(chalk.green('\n   文档  https://github.com/shifeng1993/react-start/blob/master/README.md\n'));
-    } else if(`${name}` == 'react-koa2'){
-      console.log(chalk.green('\n   新的' + `${name}` + '项目已经成功初始化'));
-      console.log(chalk.green('\n   如需开始请输入以下命令：'));
-      console.log(chalk.blue('\n           cd ' + `${project}` + '\n           npm install\n           cd webapp\n           npm start/npm run build\n           cd ..\n           node ' + `${name}`));
-      console.log(chalk.green('\n   文档  https://github.com/shifeng1993/react-koa2/blob/master/README.md\n'));
-    }else if (`${name}` == 'vue') {
-      console.log(chalk.green('\n   新的' + `${name}` + '项目已经成功初始化'));
-      console.log(chalk.green('\n   如需开始请输入以下命令：'));
-      console.log(chalk.blue('\n           cd ' + `${project}` + '\n           npm install\n           npm run dev'));
-      console.log(chalk.green('\n   文档  https://github.com/shifeng1993/vue-start/blob/master/README.md\n'));
-    } else if(`${name}` == 'vue-koa2'){
-      console.log(chalk.green('\n   新的' + `${name}` + '项目已经成功初始化'));
-      console.log(chalk.green('\n   如需开始请输入以下命令：'));
-      console.log(chalk.blue('\n           cd ' + `${project}` + '\n           npm install\n           cd webapp\n           npm start/npm run build\n           cd ..\n           node ' + `${name}`));
-      console.log(chalk.green('\n   文档  https://github.com/shifeng1993/vue-koa2/blob/master/README.md\n'));
+    switch (`${name}`) {
+      case 'react':
+        console.log(chalk.green('\n   新的' + `${name}` + '项目已经成功初始化'));
+        console.log(chalk.green('\n   如需开始请输入以下命令：'));
+        console.log(chalk.blue('\n           cd ' + `${project}` + '\n           npm install\n           npm start'));
+        console.log(chalk.green('\n   文档  https://github.com/shifeng1993/react-start/blob/master/README.md\n'));
+        break;
+      case 'react-native':
+        console.log(chalk.green('\n   新的' + `${name}` + '项目已经成功初始化'));
+        console.log(chalk.green('\n   如需开始请输入以下命令：'));
+        console.log(chalk.blue('\n           cd ' + `${project}` + '\n           yarn\n           react-native run-ios && react-native run-android'));
+        console.log(chalk.green('\n   文档  https://github.com/shifeng1993/react-native-start/blob/master/README.md\n'));
+        break;
+      case 'vue':
+        console.log(chalk.green('\n   新的' + `${name}` + '项目已经成功初始化'));
+        console.log(chalk.green('\n   如需开始请输入以下命令：'));
+        console.log(chalk.blue('\n           cd ' + `${project}` + '\n           npm install\n           npm run dev'));
+        console.log(chalk.green('\n   文档  https://github.com/shifeng1993/vue-start/blob/master/README.md\n'));
+        break;
+      case 'koa2-server':
+        console.log(chalk.green('\n   新的' + `${name}` + '项目已经成功初始化'));
+        console.log(chalk.green('\n   如需开始请输入以下命令：'));
+        console.log(chalk.blue('\n           cd ' + `${project}` + '\n           npm install\n           node app.js && supervisor app.js'));
+        console.log(chalk.green('\n   文档  https://github.com/shifeng1993/koa2server/blob/master/README.md\n'));
+        break;
+      default:
+        break;
     }
   })
 })

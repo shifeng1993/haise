@@ -1,9 +1,13 @@
 # haise-cli
-一个简易的cli脚手架，为了方便使用，故不重复造轮子，只有两个命令
+一个简易的cli脚手架，为了方便使用，故不重复造轮子，只有两个命令 init 和 ls
 
-注：创建好的工程文件依赖于create-react-app和vue-cli的用法。对两者熟悉的可以无障碍使用。
+## 可选框架：
+- react(create-react-app)
+- react-native(react-native-cli)
+- vue(vue-cli)
+- koa2-server
 
-新添加server模板基础为koa2，node>=7.6.0。
+koa2-server模板基础为koa2，node>=7.6.0。
 ## 安装方法
 `npm install -g haise-cli`
 
@@ -31,6 +35,9 @@
 2.将server模板细分为express和koa2两种。
 
 3.修复一些已知问题
+### 1.3.0
+1.精简模板数量，
+2.添加react-native构建
 ## 待添加特性
 暂无
 

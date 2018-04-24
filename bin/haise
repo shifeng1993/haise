@@ -25,7 +25,7 @@ program
 program
   .command('init')
   .description('Generate a new project')
-  .alias('i')
+  .alias('create')
   .action(() => {
     require(res('init'))
   })
