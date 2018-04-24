@@ -26,7 +26,7 @@ const question = [
   }, {
     type: 'input',
     name: 'place',
-    message: '输入项目路径（默认./）:',
+    message: '输入项目路径:',
     default: './'
   }
 ]
@@ -47,7 +47,7 @@ module.exports = prompt(question).then(({name, project, place}) => {
       case 'react':
         console.log(chalk.green('\n   新的' + `${name}` + '项目已经成功初始化'));
         console.log(chalk.green('\n   如需开始请输入以下命令：'));
-        console.log(chalk.blue('\n           cd ' + `${project}` + '\n           npm install\n           npm start'));
+        console.log(chalk.blue('\n           cd ' + `${project}` + '\n           yarn\n           npm start'));
         console.log(chalk.green('\n   文档  https://github.com/shifeng1993/react-start/blob/master/README.md\n'));
         break;
       case 'react-native':
